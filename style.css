@@ -237,6 +237,25 @@ section h2 {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  .navbar-collapse {
+    background-color: rgba(31, 38, 97, 0.98);
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+    margin-top: 0.5rem;
+  }
+  
+  .navbar-nav {
+    flex-direction: column; /* Stack vertically on mobile */
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+
   .hero-section {
     flex-direction: row;
     text-align: left;
@@ -570,4 +589,37 @@ hr {
 /* Footer */
 footer p {
   margin-top: 2rem;
+}
+
+/* About section responsive adjustments */
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Reduce horizontal margins */
+  #about .container-xxl {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    max-width: 90%;
+  }
+  
+  /* Increase width of the 4 boxes */
+  #about .col-md-5 {
+    width: 48%; /* Makes boxes nearly full width in two-column layout */
+    max-width: none;
+    flex: 0 0 48%;
+  }
+  
+  /* Adjust the about text container */
+  .about-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Optional: Adjust spacing between boxes */
+  #about .row.justify-content-evenly {
+    gap: 1.5rem 0;
+  }
+  
+  /* Make sure boxes don't get too tall */
+  #about .col-md-5 {
+    min-height: auto;
+  }
 }
