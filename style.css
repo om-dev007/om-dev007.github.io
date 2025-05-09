@@ -626,3 +626,51 @@ footer p {
     min-height: auto;
   }
 }
+
+/* Add this to your CSS */
+.nav-link.active {
+  color: #4e93ff !important; /* Same as your border color */
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: 0;
+  left: 10%;
+  background-color: #4e93ff;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Increase skills section height */
+#skills {
+  min-height: 100vh; /* Full viewport height */
+  padding: 5rem 0; /* More padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Adjust contact section */
+#contact {
+  min-height: 100vh;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  #skills, #contact {
+    min-height: auto;
+    padding: 3rem 0;
+  }
+}
