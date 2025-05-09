@@ -26,22 +26,10 @@ This is my personal portfolio website showcasing my resume, skills, and projects
 
 ---
 
-## 📁 Project Structure
-
-om-dev007.github.io/
-├── index.html # Main HTML page
-├── style.css # Custom styles
-├── script.js # JavaScript functionality
-├── Om Resume.pdf # Resume download
-├── icon.png # Website favicon
-└── om.jpg # Profile image
-
-
----
-
 ## 📃 License
 
-This project is open-source under the **MIT License**.
+This project is licensed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for more information.
 
 ---
 
