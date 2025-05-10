@@ -160,9 +160,145 @@ footer .social-icon:hover i.fa-envelope {
   padding: 2rem 0;
 }
 
+/* Perfect Circle Container */
 .profile-img-container {
-  max-width: 300px;
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #fdbb2d 0%, #3a1c71 100%);
+  padding: 5px;
+  overflow: hidden;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image Styling */
+.omimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.omimg:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .profile-img-container {
+    width: 280px;
+    height: 280px;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-img-container {
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-img-container {
+    width: 220px;
+    height: 220px;
+    min-width: 220px;
+  }
+}
+
+@media (min-width: 993px) {
+  .profile-img-container {
+    width: 300px;
+    height: 320px;
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile-img-container {
+    width: 350px;
+    height: 365px;
+    min-width: 300px;
+  }
+}
+
+/* Rounded image utilities */
+.img-rounded {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-rounded-lg {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.img-circle {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Gradient border containers for images */
+.img-border-gradient {
+  padding: 3px;
+  background: linear-gradient(90deg, #fdbb2d 0%, #3a1c71 100%);
+  background-clip: border-box;
+  overflow: hidden;
+}
+
+.img-border-gradient-blue {
+  padding: 3px;
+  background: linear-gradient(90deg, #0b0bafc0, #c413c4c5, rgb(13, 64, 139));
+  background-clip: border-box;
+  overflow: hidden;
+}
+
+.img-border-gradient-primary {
+  padding: 3px;
+  background: linear-gradient(90deg, #1c005e, #0054f0, #7a1e7a);
+  background-clip: border-box;
+  overflow: hidden;
+}
+
+/* Combined classes for easy use */
+.img-circle-gradient {
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(90deg, #fdbb2d 0%, #3a1c71 100%);
+  background-clip: border-box;
+  overflow: hidden;
+}
+
+.img-rounded-gradient {
+  border-radius: 10px;
+  padding: 3px;
+  background: linear-gradient(90deg, #fdbb2d 0%, #3a1c71 100%);
+  background-clip: border-box;
+  overflow: hidden;
+}
+
+/* Add hover effects */
+.img-hover-scale img {
+  transition: transform 0.3s ease;
+}
+
+.img-hover-scale:hover img {
+  transform: scale(1.05);
+}
+
+/* Ensuring images maintain proper aspect ratio */
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .scroll-top-btn {
